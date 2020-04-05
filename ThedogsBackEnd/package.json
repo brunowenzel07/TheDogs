@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "betfair-api": "^0.2.0",
+    "betfair-api-node": "^1.0.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.1.0",
     "eslint-config-prettier": "^6.10.1",
@@ -18,11 +20,13 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.19.0",
+    "express": "^4.17.1",
     "knex": "^0.20.13",
     "node": "^13.12.0",
     "pg": "^8.0.0",
     "prettier": "^2.0.2",
-    "sqlite3": "^4.1.1"
+    "sqlite3": "^4.1.1",
+    "tls": "^0.0.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
