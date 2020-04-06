@@ -11,7 +11,7 @@ import UserProfile from './component/userprofile';
 import MainSearch from './component/search';
 import Breadcrumb from '../breadcrumb/breadcrumb';
 import navigation from '../../menus';
-// import NavContent from '../sidebar/navcontent';
+import NavContent from '../sidebar/navcontent';
 // import NavLogo from './navlogo/navLogo';
 class Header extends Component {
   state = {
@@ -28,14 +28,15 @@ class Header extends Component {
   render() {
     return (
 
-      <header className={classnames("navbar pcoded-header navbar-expand-lg navbar-light", {
-        "headerpos-fixed": this.props.headerFixed,
-        "header-blue": this.props.bgHeader === "blue",
-        "header-red": this.props.bgHeader === "red",
-        "header-purple": this.props.bgHeader === "purple",
-        "header-info": this.props.bgHeader === "info",
-        "header-dark": this.props.bgHeader === "dark",
+      <header className={classnames("pcoded-header navbar-expand-lg navbar-light", {
+        // "headerpos-fixed": this.props.headerFixed,
+        // "header-blue": this.props.bgHeader === "blue",
+        // "header-red": this.props.bgHeader === "red",
+        // "header-purple": this.props.bgHeader === "purple",
+        // "header-info": this.props.bgHeader === "info",
+        // "header-dark": this.props.bgHeader === "dark",
       })}>
+        {/* //link mobile */}
         <div className="m-header">
           <Link
             to="#"
@@ -49,7 +50,7 @@ class Header extends Component {
           </Link>
           <Link to={Path.defaultPath} className="b-brand">
             <div className="b-bg">
-             T
+              T
             </div>
             <span className="b-title">
               Teste
@@ -114,7 +115,28 @@ class Header extends Component {
                       </li>
                     </ul>) : null
                 }
-                < ul className="navbar-nav ml-auto">
+
+                {/* <div className="navbar-content sidenav-horizontal sidenav" id="layout-sidenav">
+                  <a href="#!" className='sidenav-horizontal-prev'></a>
+                  <div id="sidenav-wrapper" className="sidenav-horizontal-wrapper">
+                    <ul id="sidenav-horizontal" className="nav pcoded-inner-navbar sidenav-inner">
+                      <NavContent
+                        navigation={navigation.items}
+                        parentLi="nav-item"
+                        parentLiA="nav-link"
+                        parentLiCa="nav-item pcoded-menu-caption"
+                        toggleCls="pcoded-hasmenu"
+                        activeToggle="pcoded-trigger"
+                        collapesTitle="nav-link"
+                        subUi="pcoded-submenu"
+                        {...this.props}
+                      />
+                    </ul>
+                  </div>
+                  {/* <a href="#!" className={'sidenav-horizontal-next'} onClick={this.scrollNextHandler}><span /></a> */}
+                {/* </div> */}
+           
+                {/* < ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                     <MainSearch />
                   </li>
@@ -131,8 +153,8 @@ class Header extends Component {
                   <li>
                     <UserProfile />
                   </li>
-                </ul>
-                
+                </ul> */}
+
               </React.Fragment>
             )
           }
