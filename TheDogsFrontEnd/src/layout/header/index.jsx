@@ -10,7 +10,9 @@ import { openChatBox } from '../../redux/actions/chatActions';
 import UserProfile from './component/userprofile';
 import MainSearch from './component/search';
 import Breadcrumb from '../breadcrumb/breadcrumb';
-
+import navigation from '../../menus';
+// import NavContent from '../sidebar/navcontent';
+// import NavLogo from './navlogo/navLogo';
 class Header extends Component {
   state = {
     navOpen: true
@@ -25,6 +27,7 @@ class Header extends Component {
   }
   render() {
     return (
+
       <header className={classnames("navbar pcoded-header navbar-expand-lg navbar-light", {
         "headerpos-fixed": this.props.headerFixed,
         "header-blue": this.props.bgHeader === "blue",
@@ -46,10 +49,10 @@ class Header extends Component {
           </Link>
           <Link to={Path.defaultPath} className="b-brand">
             <div className="b-bg">
-              E
+             T
             </div>
             <span className="b-title">
-              Elite Able
+              Teste
             </span>
           </Link>
         </div>
@@ -129,6 +132,7 @@ class Header extends Component {
                     <UserProfile />
                   </li>
                 </ul>
+                
               </React.Fragment>
             )
           }

@@ -21,6 +21,8 @@ class Sidebar extends Component {
     this.setState({ upgrate: false })
   }
 
+
+  //Movimenta as pistas de um lado para o outro
   scrollPrevHandler = () => {
     const wrapperWidth = document.getElementById('sidenav-wrapper').clientWidth;
 
@@ -31,7 +33,7 @@ class Sidebar extends Component {
       this.setState({ scrollWidth: scrollWidth, prevDisable: false });
     }
   };
-
+  //Movimenta as pistas de um lado para o outro
   scrollNextHandler = () => {
     const wrapperWidth = document.getElementById('sidenav-wrapper').clientWidth;
     const contentWidth = document.getElementById('sidenav-horizontal').clientWidth;

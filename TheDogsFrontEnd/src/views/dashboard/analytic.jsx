@@ -20,7 +20,7 @@ class Analytic extends Component {
   render() {
     return (
       <Row>
-        <Col xl="8" md="12">
+        {/* <Col xl="8" md="12">
           <Row>
             <Col md="6">
               <StaticTableCard
@@ -171,21 +171,26 @@ class Analytic extends Component {
               />
             </Col>
           </Row>
-        </Col>
-        <Col md="12">
-          <StaticsSiteVisitCard
-            cardTitle="Site visitors session log"
-            campaing="Total and average"
-            visitsData={Data.siteVisitData}
-            click={true}
-            cost={true}
-            ctr={true}
-            arpu={true}
-            ecpi={true}
-            roi={true}
-            revenue={true}
-            conversions={true}
-          />
+        </Col>*/}
+       <Col>
+          <Row>
+            
+            <Col md="12">
+              <StaticsSiteVisitCard
+                cardTitle="Site visitors session log"
+                campaing="Total and average"
+                visitsData={Data.siteVisitData}
+                click={true}
+                cost={true}
+                ctr={true}
+                arpu={true}
+                ecpi={true}
+                roi={true}
+                revenue={true}
+                conversions={true}
+              />
+            </Col> 
+          </Row>
         </Col>
       </Row>
     );
