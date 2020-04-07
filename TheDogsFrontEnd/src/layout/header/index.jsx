@@ -28,14 +28,7 @@ class Header extends Component {
   render() {
     return (
 
-      <header className={classnames("pcoded-header navbar-expand-lg navbar-light", {
-        // "headerpos-fixed": this.props.headerFixed,
-        // "header-blue": this.props.bgHeader === "blue",
-        // "header-red": this.props.bgHeader === "red",
-        // "header-purple": this.props.bgHeader === "purple",
-        // "header-info": this.props.bgHeader === "info",
-        // "header-dark": this.props.bgHeader === "dark",
-      })}>
+      <header className="pcoded-header navbar-expand-lg navbar-light">
         {/* //link mobile */}
         <div className="m-header">
           <Link

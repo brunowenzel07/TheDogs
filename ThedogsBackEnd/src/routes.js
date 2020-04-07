@@ -16,7 +16,7 @@ routers.get('/teste', async (request, response) => {
 })
 
 routers.get('/listaCorrida', async (req, res) => {
-    betfair = new Betfair('XQzvGbEmSL9JwR7n', 'psyalisson@gmail.com', 'alisson123', true);
+    
     console.log(betfair)
     const test = await betfair.listMarketCatalogue({
         "eventTypeIds": ["7"],
